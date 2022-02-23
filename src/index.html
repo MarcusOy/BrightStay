@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-    scale=1.0" />
+		<title>BrightStay: Purdue</title>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css"
+		/>
+		<script
+			nomodule=""
+			src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="index.css" />
+		<script type="application/javascript" src="browser-polyfill.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body>
+		<div id="root">
+			<div id="logo">
+				<img id="logo-img" src="img/logo.png" />
+				<h1 id="logo-text">BrightStay x Purdue</h1>
+			</div>
+
+			<p>
+				<em>
+					Signs you into
+					<a href="https://purdue.brightspace.com">purdue.brightspace.com</a>
+					whenever it logs you out.</em
+				>
+			</p>
+
+			<p id="login-status">
+				You are currently not signed in. Click the <b>Login</b> button below to
+				sign in using BoilerKey. You should only have to do this once.
+			</p>
+
+			<button id="login-button" type="button" class="c-button c-button--info">
+				Login
+			</button>
+			<button
+				id="logout-button"
+				type="button"
+				class="c-button c-button--error"
+				disabled
+			>
+				Logout
+			</button>
+			<button id="refresh-button" type="button" class="c-button">
+				Refresh
+			</button>
+			<p>
+				If you find yourself hitting the login page, click the Refresh button
+				below. If this doesn't work, log in again.
+			</p>
+			<div class="c-input-group">
+				<div class="o-field">
+					<input
+						id="token-reveal"
+						class="c-field"
+						placeholder="Token hidden. Click Reveal to show token."
+						readonly
+					/>
+				</div>
+				<button id="reveal-token-button" class="c-button c-button--brand">
+					Reveal
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

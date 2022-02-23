@@ -1,0 +1,24 @@
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+#root {
+  width: 30rem;
+  padding: 1rem;
+}
+
+#logo {
+  vertical-align: middle;
+}
+#logo-img {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+#logo-text {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}

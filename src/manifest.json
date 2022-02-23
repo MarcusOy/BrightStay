@@ -1,0 +1,33 @@
+{
+	"name": "BrightStay x Purdue",
+	"version": "1.0",
+	"description": "Keeps you logged into purdue.brightspace.com",
+	"homepage_url": "https://m.orciuch.org",
+	"manifest_version": 2,
+	"minimum_chrome_version": "74",
+	"browser_action": {
+		"default_popup": "index.html",
+		"default_icon": {
+			"16": "img/icon16.png",
+			"32": "img/icon32.png",
+			"48": "img/icon48.png"
+		}
+	},
+	"permissions": [
+		"activeTab",
+		"storage",
+		"webRequest",
+		"*://purdue.brightspace.com/*"
+	],
+	"background": {
+		"scripts": [
+			"browser-polyfill.js",
+			"interceptor.js"
+		]
+	},
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "BrightStayPurdue@m.orciuch.org"
+		}
+	}
+}
